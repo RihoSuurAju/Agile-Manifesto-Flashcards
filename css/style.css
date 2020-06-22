@@ -1,0 +1,54 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: bisque;
+}
+
+.container {
+    border: 5px solid darkseagreen;
+    border-radius: 20px;
+    margin: 5% auto;
+}
+
+button {
+    background-color: honeydew;
+    border: 2px solid rgba(143, 188, 143, 0.493);
+}
+
+.title {
+    border: 2px solid darkseagreen;
+}
+
+.middle {
+    border: 2px solid rgba(143, 188, 143, 0.534);
+}
+
+h4 {
+  margin-top: 200px;
+}
+
+.content {
+  position: relative;
+  height: 500px;
+}
+
+.card {
+  position: absolute;
+  border: 0px;
+  width: 100%;
+  height: 100%;
+  transition-duration: 0.25s;
+  background-color: rgba(255, 228, 196, 0);
+}
+
+.card.back {
+  opacity: 0.0;
+}
+
+.content:hover > .back {
+  opacity: 1;
+}
+
+.content:hover > .cover {
+  opacity: 0.0;
+}
